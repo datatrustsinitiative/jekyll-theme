@@ -56,7 +56,7 @@ layout: page
     {% endfor %}
     {%endif%}
   </div>
-  <div class="project-list">
+  <div class="person-projects">
     {% assign person_slug = page.slug %}
     {% assign posts_by_person = "" | split: "" %}
     
@@ -67,14 +67,19 @@ layout: page
     {% endif %}
     {% endfor %}
     {% endfor %}
+    {% assign num_posts = posts_by_person | size %}
+    {% if num_posts >0  %}
     
-    {% assign num_pubs = posts_by_person | size %}
-    {% if num_pubs >0 %}
     <h2>Posts</h2>
-    {% for item in posts_by_person %}
-    {% include listblog.html entry=item %}
-    {% endfor %}
-    {%endif%}
+    <div class="project-list">
+      {% assign num_pubs = posts_by_person | size %}
+      {% if num_pubs >0 %}
+      {% for item in posts_by_person %}
+      {% include listblog.html entry=item %}
+      {% endfor %}
+      {%endif%}
+    </div>
+    {% endif %}
   </div>
   <div class="person-projects">
     {% assign projects_by_person = "" | split: "" %}
