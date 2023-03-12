@@ -56,6 +56,26 @@ layout: page
     {% endfor %}
     {%endif%}
   </div>
+  <div class="project-list">
+    {% assign person_slug = page.slug %}
+    {% assign posts_by_person = "" | split: "" %}
+    
+    {% for post in site.posts %}
+    {% for author in post.author %}
+    {% if author.person_page == person_slug %}
+    {% assign posts_by_person = posts_by_person | push: post %}
+    {% endif %}
+    {% endfor %}
+    {% endfor %}
+    
+    {% assign num_pubs = posts_by_person | size %}
+    {% if num_pubs >0 %}
+    <h2>Posts</h2>
+    {% for item in posts_by_person %}
+    {% include listblog.html entry=item %}
+    {% endfor %}
+    {%endif%}
+  </div>
   <div class="person-projects">
     {% assign projects_by_person = "" | split: "" %}
     
