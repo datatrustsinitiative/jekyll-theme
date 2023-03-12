@@ -95,26 +95,27 @@ main.default-content p {
   z-index: 1;
 }
 
-.site-nav {
-    .page-link {
-	color: $accent;
-	line-height: $base-line-height;
-	display: block;
-	padding: 5px 10px;
-	
-	// Gaps between nav items, but not on the last one
-	&:not(:last-child) {
-	    margin-right: 0;
-	}
-	margin-left: 20px;
+.nav-links {
+    color: $accent;
+}
+.nav-links a {
+    color: inherit;
+}
+.nav-links a:hover, .nav-links a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+.page-link {
+    color: $accent;
+    line-height: $base-line-height;
+    display: block;
+    padding: 5px 10px;
+
+    // Gaps between nav items, but not on the last one
+    &:not(:last-child) {
+      margin-right: 0;
     }
-    a {
-	color: inherit;
-    }
-    a:hover, a:visited {
-	text-decoration: none;
-	color: inherit;
-    }
+    margin-left: 20px;
 }
 .site-header {
     border-top: none;
