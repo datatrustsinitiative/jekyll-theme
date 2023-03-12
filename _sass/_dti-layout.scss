@@ -95,10 +95,10 @@ main.default-content p {
   z-index: 1;
 }
 
-.navbar a {
+.nav-links a {
     color: $accent;
 }
-.navbar a:hover, a:visited {
+.nav-links a:hover, a:visited {
     text-decoration: none;
     color: $accent;
 }
