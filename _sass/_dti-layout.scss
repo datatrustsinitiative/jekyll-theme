@@ -63,13 +63,9 @@ main.default-content p {
 }
 
 //header and footer
-.nav-links a {
-    color: $accent;
-}
 .hero-image {
-    background-color: $primary;
-    color: $accent;
     
+  background-color: $primary;
   position: relative;
   height: 250px; /* adjust this height to your liking */
   overflow: hidden;
