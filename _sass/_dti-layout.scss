@@ -99,11 +99,11 @@ main.default-content p {
     color: $accent;
 }
 .nav-links a {
-    color: $accent;
+    color: inherit;
 }
-.nav-links a:hover, a:visited {
+.nav-links a:hover, .nav-links a:visited {
     text-decoration: none;
-    color: $accent;
+    color: inherit;
 }
 
 .page-link {
