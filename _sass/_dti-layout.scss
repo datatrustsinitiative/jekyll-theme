@@ -67,6 +67,9 @@ main.default-content p {
     color: $accent;
 }
 .hero-image {
+    background-color: $primary;
+    color: $accent;
+    
   position: relative;
   height: 250px; /* adjust this height to your liking */
   overflow: hidden;
@@ -92,9 +95,13 @@ main.default-content p {
   width: 100%;
   padding: 20px;
   box-sizing: border-box;
+  color: $accent;
   z-index: 1;
 }
 
+.nav-links {
+    color: $accent;
+}
 .nav-links a {
     color: $accent;
 }
@@ -105,6 +112,7 @@ main.default-content p {
 
 footer {
     background-color: $primary;
+    color: $accent;
     height: 200px;
 }
 
