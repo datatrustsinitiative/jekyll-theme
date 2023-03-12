@@ -96,12 +96,11 @@ main.default-content p {
 }
 
 .navbar a {
-    color: inherit;
+    color: $accent;
 }
 .navbar a:hover, a:visited {
-    color: inherit;
     text-decoration: none;
-    color: inherit;
+    color: $accent;
 }
 
 footer {
