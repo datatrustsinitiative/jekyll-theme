@@ -95,6 +95,15 @@ main.default-content p {
   z-index: 1;
 }
 
+.navbar a {
+    color: inherit;
+}
+.navbar a:hover, a:visited {
+    color: inherit;
+    text-decoration: none;
+    color: inherit;
+}
+
 footer {
     background-color: $primary;
     height: 200px;
