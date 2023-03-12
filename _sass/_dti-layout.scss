@@ -117,7 +117,16 @@ main.default-content p {
       margin-right: 0;
     }
     margin-left: 20px;
-  }
+}
+.site-header {
+    border-top: none;
+    border-bottom: none;
+    backgrond-color: $background-color;
+
+    // Positioning context for the mobile navigation icon
+    position: relative;
+}
+
 footer {
     background-color: $primary;
     color: $accent;
