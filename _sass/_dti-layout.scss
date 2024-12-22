@@ -96,24 +96,31 @@ main.default-content p {
 }
 
 .page-link {
-    color: $accent;
+    color: #ffffff;  // Make text white
     line-height: $base-line-height;
     display: block;
     padding: 5px 10px;
 
-    // Gaps between nav items, but not on the last one
     &:not(:last-child) {
       margin-right: 0;
     }
     margin-left: 20px;
 }
+
 .nav-links a {
-    color: inherit;
+    color: #ffffff;  // Make text white
 }
-.nav-links a:hover, .nav-links a:visited {
+
+.nav-links a:hover {
     text-decoration: none;
-    color: inherit;
+    color: $accent;  // Use your cyan accent color on hover
 }
+
+.nav-links a:visited {
+    text-decoration: none;
+    color: $accent;  // Use your cyan accent color for visited links
+}
+
 .site-header {
     border-top: none;
     border-bottom: none;
