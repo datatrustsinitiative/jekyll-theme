@@ -285,10 +285,17 @@ footer {
   }
 }
 
+.partner-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+}
+
 .partner-card {
   transition: transform 0.2s ease-out;
   position: relative;
-  display: flex;
+  display: block;
   margin-bottom: 20px;
   padding: 10px;
   border-radius: 5px;
@@ -309,6 +316,7 @@ footer {
   overflow: hidden;
   width: 100%;
   height: 200px;
+  margin-bottom: 10px;
 }
 
 .partner-image img {
@@ -317,7 +325,7 @@ footer {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .video-container {

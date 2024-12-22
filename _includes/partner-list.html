@@ -1,3 +1,5 @@
-{% for partner in site.data.about.partners %}
-{% include listpartner.html entry=partner %}
-{% endfor %}
+<div class="partner-list">
+  {% for partner in site.data.about.partners %}
+  {% include listpartner.html entry=partner %}
+  {% endfor %}
+  </div>
