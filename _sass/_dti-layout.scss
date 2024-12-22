@@ -96,7 +96,6 @@ main.default-content p {
 }
 
 .page-link {
-    color: #ffffff;  // Make text white
     line-height: $base-line-height;
     display: block;
     padding: 5px 10px;
@@ -108,16 +107,12 @@ main.default-content p {
 }
 
 
-.nav-links a {
+.nav-links a, .page-link {
     color: #ffffff;  // Make text white
-}
-
-.nav-links a:hover {
     text-decoration: none;
-    color: $accent;  // Use your cyan accent color on hover
 }
 
-.nav-links a:visited {
+.nav-links a:hover, .nav-links a:visited {
     text-decoration: none;
     color: $accent;  // Use your cyan accent color for visited links
 }
