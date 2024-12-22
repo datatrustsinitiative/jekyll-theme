@@ -287,9 +287,11 @@ footer {
 
 .partner-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
   grid-gap: 20px;
   padding: 20px;
+  max-width: 800px;
+  margin: 0 auto; /* centers the list */
 }
 
 .partner-card {
