@@ -95,31 +95,6 @@ main.default-content p {
   z-index: 1;
 }
 
-.page-link {
-    color: #ffffff;  // Make text white
-    line-height: $base-line-height;
-    display: block;
-    padding: 5px 10px;
-
-    &:not(:last-child) {
-      margin-right: 0;
-    }
-    margin-left: 20px;
-}
-
-.page-link a {
-    color: #ffffff;  // Make text white
-}
-
-.page-link a:hover {
-    text-decoration: none;
-    color: $accent;  // Use your cyan accent color on hover
-}
-
-.page-link a:visited {
-    text-decoration: none;
-    color: $accent;  // Use your cyan accent color for visited links
-}
 
 .nav-links a {
     color: #ffffff;  // Make text white
