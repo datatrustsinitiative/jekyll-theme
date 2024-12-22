@@ -1,7 +1,9 @@
-<div class="partner-card">
+<div class="partner-card"></div>
   <a href="{{ include.entry.link }}">
-  <div class="partner-image">
-    <img src="{%if include.entry.image contains 'http'%}{{include.entry.image}}{%else%}{%if include.entry.image and include.entry.image != "" %}{{include.entry.image | relative_url }}{% else %}{{site.data.images.person_placeholder}}{%endif%}{%endif%}" alt="Image of {{include.entry.title}}">
-  </div>
+    <div class="partner-image">
+      {% assign img_src = include.entry.image | default: site.data.images.person_placeholder %}
+      {% assign final_src = img_src contains 'http' | ternary: img_src, img_src | relative_url %}
+      <img src="{{ final_src }}" alt="Image of {{ include.entry.title }}">
+    </div>
   </a>
 </div>
