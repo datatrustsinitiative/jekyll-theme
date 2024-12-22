@@ -107,6 +107,20 @@ main.default-content p {
     margin-left: 20px;
 }
 
+.page-link a {
+    color: #ffffff;  // Make text white
+}
+
+.page-link a:hover {
+    text-decoration: none;
+    color: $accent;  // Use your cyan accent color on hover
+}
+
+.page-link a:visited {
+    text-decoration: none;
+    color: $accent;  // Use your cyan accent color for visited links
+}
+
 .nav-links a {
     color: #ffffff;  // Make text white
 }
