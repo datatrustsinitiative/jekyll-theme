@@ -96,7 +96,7 @@ main.default-content p {
 }
 
 .page-link {
-    color: #ffffff;  // Make text white
+    color: #ffffff !important;  // Make text white
     line-height: $base-line-height;
     display: block;
     padding: 5px 10px;
